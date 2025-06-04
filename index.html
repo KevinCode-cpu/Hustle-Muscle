@@ -186,10 +186,10 @@
       margin-top: 10px;
     }
 
-    .inputBox input,
-    .inputBox textarea {
-      width: 400px;
-      /* max-width: 600px;   */
+   .inputBox input,
+   .inputBox textarea {
+     width: 100%;
+      max-width: 400px;
       padding: 10px;
       background: #fff;
       border: 1px solid #ccc;
@@ -282,6 +282,7 @@
       position: relative;
       max-width: 600px;
       margin: 0 auto;
+      color: rgb(225, 7, 79);
     }
 
     .testimonial {
@@ -292,6 +293,11 @@
     .testimonial.active {
       display: block;
     }
+     @media (max-width: 500px) {
+  .modal-content {
+    padding: 1rem;
+            }
+               }
 
     @media (max-width: 768px) {
       .hero h1 {
@@ -302,6 +308,10 @@
         flex-direction: column;
         align-items: center;
       }
+       .card {
+    width: 100%;
+    max-width: 400px;
+            }
 
       header {
         flex-direction: column;
@@ -311,6 +321,7 @@
 
       .logo h1 {
         font-size: 1.2rem;
+        text-align: center;
       }
     }
   </style>
